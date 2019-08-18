@@ -31,12 +31,13 @@ namespace TicTacToh {
 
                 sendr.Text = _currentPLayer;
 
-                if (_currentPLayer == "X") {
-                    sendr.ForeColor = Color.Red;
-                }
-                else if (_currentPLayer == "O") {
-                    sendr.ForeColor = Color.Blue;
-                }
+                //if (_currentPLayer == "X") {
+                //    sendr.ForeColor = Color.Red;
+                //}
+                //else if (_currentPLayer == "O") {
+                //    sendr.ForeColor = Color.Blue;
+                //}
+                sendr.ForeColor = _currentPLayer == "X" ? Color.Red : Color.Blue;
 
                 ValidateTicTaToh();
 
@@ -89,15 +90,29 @@ namespace TicTacToh {
 
         private void Congrats() {
             MessageBox.Show("Congratulations, " + _currentPLayer + " wins");
-            this.Close();
-            TicTacToh ticTacToh = new TicTacToh();
-            ticTacToh.ShowDialog();
+            NewGame();
+
+        }
+
+        private void NewGame() {
+            btn1.Text = "";
+            btn2.Text = "";
+            btn3.Text = "";
+            btn4.Text = "";
+            btn5.Text = "";
+            btn6.Text = "";
+            btn7.Text = "";
+            btn8.Text = "";
+            btn9.Text = "";
+            _currentPLayer = "X";
+            _counter = 0;
         }
 
         private void DrawMessage() {
 
             if (_counter == 9) {
                 MessageBox.Show("You lost, suckers");
+                NewGame();
 
             }
 
