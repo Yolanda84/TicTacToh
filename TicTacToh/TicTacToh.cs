@@ -19,38 +19,533 @@ namespace TicTacToh {
             InitializeComponent();
         }
 
+
+
         private void ButtonClick(object sender, EventArgs e) {
             Button sendr = sender as Button;
+            Random rnd = new Random();
+            int buttonNumber = rnd.Next(1, 9);
 
             if ((sendr.Text == "X") || (sendr.Text == "O")) {
                 return;
             }
-            else {
-                _counter++;
-                sendr.Font = new Font(sendr.Font.Name, 18, sendr.Font.Style & FontStyle.Bold);
 
+            if (sendr == btn1) {
                 sendr.Text = _currentPLayer;
-
-                //if (_currentPLayer == "X") {
-                //    sendr.ForeColor = Color.Red;
-                //}
-                //else if (_currentPLayer == "O") {
-                //    sendr.ForeColor = Color.Blue;
-                //}
-                sendr.ForeColor = _currentPLayer == "X" ? Color.Red : Color.Blue;
-
-                ValidateTicTaToh();
-
-                if (_currentPLayer == "X") {
-                    _currentPLayer = "O";
-                    }
-                else if (_currentPLayer == "O") {
-                    _currentPLayer = "X";
+                if (buttonNumber == 1) {
+                    return;
                 }
-
-                DrawMessage();
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
             }
+            else if (sendr == btn2) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    btn1.Text = "O";
+                }
+                else if (buttonNumber == 2) {
+                    return;
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            if (sendr == btn3) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    return;
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    return;
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            else if (sendr == btn4) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    btn1.Text = "O";
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    return;
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            else if (sendr == btn5) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    btn1.Text = "O";
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    return;
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            else if (sendr == btn6) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    btn1.Text = "O";
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    return;
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            if (sendr == btn7) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    return;
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    return;
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            else if (sendr == btn8) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    btn1.Text = "O";
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    return;
+                }
+                else if (buttonNumber == 9) {
+                    while ((btn9.Text == "X") || (btn9.Text == "O")) {
+                        return;
+                    }
+                    btn9.Text = "O";
+                }
+            }
+            else if (sendr == btn9) {
+                sendr.Text = _currentPLayer;
+                if (buttonNumber == 1) {
+                    while ((btn1.Text == "X") || (btn1.Text == "O")) {
+                        return;
+                    }
+                    btn1.Text = "O";
+                }
+                else if (buttonNumber == 2) {
+                    while ((btn2.Text == "X") || (btn2.Text == "O")) {
+                        return;
+                    }
+                    btn2.Text = "O";
+                }
+                else if (buttonNumber == 3) {
+                    while ((btn3.Text == "X") || (btn3.Text == "O")) {
+                        return;
+                    }
+                    btn3.Text = "O";
+                }
+                else if (buttonNumber == 4) {
+                    while ((btn4.Text == "X") || (btn4.Text == "O")) {
+                        return;
+                    }
+                    btn4.Text = "O";
+                }
+                else if (buttonNumber == 5) {
+                    while ((btn5.Text == "X") || (btn5.Text == "O")) {
+                        return;
+                    }
+                    btn5.Text = "O";
+                }
+                else if (buttonNumber == 6) {
+                    while ((btn6.Text == "X") || (btn6.Text == "O")) {
+                        return;
+                    }
+                    btn6.Text = "O";
+                }
+                else if (buttonNumber == 7) {
+                    while ((btn7.Text == "X") || (btn7.Text == "O")) {
+                        return;
+                    }
+                    btn7.Text = "O";
+                }
+                else if (buttonNumber == 8) {
+                    while ((btn8.Text == "X") || (btn8.Text == "O")) {
+                        return;
+                    }
+                    btn8.Text = "O";
+                }
+                else if (buttonNumber == 9) {
+                    return;
+                }
+            }
+
+
+            //else {
+            //    _counter++;
+            //    sendr.Font = new Font(sendr.Font.Name, 18, sendr.Font.Style & FontStyle.Bold);
+
+            //    sendr.Text = _currentPLayer;
+            //    btn1.Text = "O";
+
+            //if (_currentPLayer == "X") {
+            //    sendr.ForeColor = Color.Red;
+            //}
+            //else if (_currentPLayer == "O") {
+            //    sendr.ForeColor = Color.Blue;
+            //}
+            //sendr.ForeColor = _currentPLayer == "X" ? Color.Red : Color.Blue;
+
+            //ValidateTicTaToh();
+
+            //if (_currentPLayer == "X") {
+            //    _currentPLayer = "O";
+            //    }
+            //else if (_currentPLayer == "O") {
+            //    _currentPLayer = "X";
+            //}
+
+            //DrawMessage();
         }
+
+
 
         public void ValidateTicTaToh() {
 
